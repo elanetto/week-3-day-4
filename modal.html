@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Modal ::</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .modal {
+            height: 80vh;
+            background-color: white;
+            width: 900px;
+            max-width: 80%;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem .5rem 1rem;
+            border-bottom: 1px solid #777;
+        }
+
+        .modal-header .title {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        .modal-header .close-button {
+            border: none;
+            background: none;
+            font-size: 1.5rem;
+            align-self: flex-start;
+            padding-top: .5rem;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 1rem;
+            overflow: auto;
+            flex-grow: 1;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            border-top: 1px solid #777;
+            padding: .5rem;
+            gap: .5rem;
+        }
+
+
+        .btn {
+            padding: .5rem 1rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: inherit;
+        }
+
+        .btn-primary {
+            background-color: #1CA;
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #08A;
+        }
+
+        .btn-danger {
+            background-color: #C33;
+        }
+
+        .btn-danger:hover, .btn-danger:focus {
+            background-color: #A11;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Modal container -->
+    <div class="modal">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <span class="title">Title</span>
+            <button class="close-button">X</button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+            <p>
+                Pokem ipsum dolor sit amet Leafeon Loudred Meloetta Garbodor Bug Hoppip. Silver Gothita Druddigon Zigzagoon Foongus what
+                kind of Pokemon are you Helix Fossil. Pikachu Octillery Meloetta lorem ipsum dolor sit amet Zorua Storm Badge Haunter.
+                Ivysaur Petilil searching far and wide Azumarill you teach me and I'll teach you Helix Fossil Noctowl. Meowth, that's
+                right we're blasting off again Water Gun Slowbro Metagross Klinklang Mint Berry.
+            </p>
+            <p>    
+                Meowth, that's right Grovyle Bastiodon Pokeball Sigilyph Swinub Registeel. Ruby Kabutops Blaziken Venonat Rayquaza Gible
+                Genesect. Sand-Attack Conkeldurr Silver Golett Rock Wailmer Doduo. Rising Badge Lugia Gible Heracross gotta catch 'em
+                all Elite Four Magnemite. Water Nidoran Alakazam Seismitoad Sudowoodo Petilil Ditto.
+            </p>
+            <p>    
+                Silver Hitmontop Feraligatr Tornadus Growlithe Gothita Drapion. Squirtle Combee Dark Darkrai Arbok Octillery Drifblim.
+                Quis nostrud exercitation ullamco laboris nisi Potion Grotle Normal Dusknoir Zweilous Mienfoo. Anim id est laborum
+                Ambipom Palpitoad Leafeon Bonsly Dusclops Azumarill. Ash Riolu Bronzong Frillish Charmeleon Venipede I'm on the road to
+                Viridian City.
+            </p>
+            <p>    
+                Leaf Green Pelipper excepteur sint occaecat cupidatat non proident Espeon Stantler Registeel Zoroark. Ivysaur Meganium
+                we're blasting off again Helix Fossil Reshiram Lavender Town Surskit. S.S. Anne Treecko Cyndaquil Linoone Professor Elm
+                but nothing happened Nuzleaf. Bulbasaur gym Super Potion Cherubi Vulpix Pewter City Water. Charmeleon to catch them is
+                my real test Wynaut Klinklang Electrike Pidove Bayleef.
+            </p>
+            <p>     
+                Rising Badge Seadra Swellow Moltres Roserade Kecleon Spoink. Charmander Entei Pidove Torchic Mandibuzz Swalot Hippowdon.
+                Velit esse cillum dolore eu fugiat nulla pariatur Ludicolo Blue Corphish Mewtwo Shinx Great Ball. Vine Whip Miltank
+                Dwebble The Power Of One Torkoal Masquerain Ekans. Poison Sting Quagsire Grumpig Lombre Swift Patrat Snover. 
+            </p>
+        </div>    
+            
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+            <button class="btn btn-primary">Ok</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+    
+</body>
+</html>
